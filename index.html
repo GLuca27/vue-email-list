@@ -6,20 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <title>Document</title>
+    <title>Vue EMail-List</title>
 </head>
 <body>
     <div id="app">
-        <div v-if="!error">
-            <ul v-if="emails.lenght === 10">
-                <li v-for="email in emails">{{ emails }}</li>
+            <ul v-if="!error">
+                <li v-for="email in emails">{{ email }}</li>
             </ul>
-        </div>
 
         <div v-else>
-            <ul v-if>
-               <h1>Riprova più tardi!!</h1>
-            </ul>
+               <h1>Riprova più tardi!!</h1>          
         </div>
     </div>
 
